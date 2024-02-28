@@ -1,7 +1,6 @@
 Estágio Supervisionado
 Este repositório contém informações e recursos relacionados ao meu estágio supervisionado. Durante este período, estou trabalhando em Dk7 e Unifil sob a supervisão do Eduardo Carolensky e Ricardo Petri.
 
-Objetivo
 O objetivo deste estágio é o desenvolvimento de um aplicativo para gerenciamento de chamados.
 
 Conteúdo
