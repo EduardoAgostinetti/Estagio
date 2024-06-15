@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recovery</title>
+    <link rel="stylesheet" href="../css/sign-in.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="../js/recovery-code.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <i class="fas fa-user fa-3x"></i>
+            <p>Recovery - Help Desk</p>
+        </div>
+
+        <div class="signin-container">
+            <form id="recoveryCodeForm" method="POST">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="emailcoderecovery" name="email" required>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senhacoderecovery" name="senha" required>
+                <label for="confirmar_senha">Confirmar Senha:</label>
+                <input type="password" id="confirmar_senhacoderecovery" name="confirmar_senha" required>
+                <label for="code">Código:</label>
+                <input type="text" id="codecoderecovery" name="code" required>
+                
+                <button type="submit">Alterar Senha</button>
+
+                <div class="additional-info">
+                    <div>
+                        <div>Já tem uma conta? <a href="sign-in.html"> Acesse já </a></div><br>
+                        <div>Não tem uma conta?  <a href="sign-up.html">Crie agora</a></div>
+                    </div>
+                    <div class="logo"><img class="unifil" src="../images/unifil.png" alt=""></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

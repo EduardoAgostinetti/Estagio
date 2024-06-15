@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #FF7B01;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    
+    color: #fff;
+    
+}
+
+.header i {
+    font-size: 48px;
+    margin: 0%;
+}
+.header p{
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+.signin-container {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 35px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.signin-container form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.signin-container label {
+    margin-bottom: 5px;
+}
+
+.signin-container input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: #F4E1D6;
+}
+
+.signin-container button {
+    padding: 10px;
+    background-color: #FF7B01;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.signin-container button:hover {
+    background-color: #eeb61e;
+}
+
+.additional-info {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.additional-info a {
+    color: #FF7B01;
+    text-decoration: none;
+}
+
+.additional-info a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    width: 160px;
+    height: 50px;
+}
+
+.unifil {
+    width: 160px;
+    height: 50px;
+} 

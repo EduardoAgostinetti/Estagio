@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Desk</title>
+    <link rel="stylesheet" href="../css/panel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <i class="fas fa-user fa-2x" style="margin-right: 15px;"></i>
+            <span id="userName"></span>
+        </div>
+        <div class="navbar-right">
+            <a href="#" id="buttonOne"><i class="fas fa fa-plus-circle fa-2x" style="margin-right: 5px;"></i> Novo
+                Chamado</a>
+            <a href="#" id="buttonTwo"><i class="fas fa fa-list-alt fa-2x" style="margin-right: 5px;"></i> Chamados
+                Abertos</a>
+            <a href="#" id="buttonThree"><i class="fas 	fa fa-address-card fa-2x" style="margin-right: 5px;"></i> Novo
+                Funcionario </a>
+            <a href="#" id="buttonFour"><i class="fas fa fa-calendar fa-2x" style="margin-right: 5px;"></i>Gerar Relatório</a>
+            <a href="sign-in.html"><i class="fas 	fa fa-power-off" style="margin-right: 5px;"></i>
+                Sair</a>
+        </div>
+    </div>
+
+    <div id="contentOne">
+        <div id="newTask">
+            <form id="taskForm" action="#" method="POST">
+                <label for="local">Local:</label>
+                <select id="local" name="local" required>
+                    <option value="Administração e Recursos Humanos">Secretaria de Administração e Recursos Humanos
+                    </option>
+                    <option value="Recursos Humanos">Secretaria de Recursos Humanos</option>
+                    <option value="Compras e Licitações">Secretaria de Compras e Licitações</option>
+                    <option value="Licitações">Secretaria de Licitações</option>
+                    <option value="Compras">Secretaria de Compras</option>
+                    <option value="Obras e Engenharia">Secretaria de Obras e Engenharia</option>
+                    <option value="Júridico">Secretaria do Júridico</option>
+                    <option value="Tributação">Secretaria da Tributação</option>
+                    <option value="Gabinete">Secretaria do Gabinete</option>
+                    <option value="Comunicação">Secretaria da Comunicação</option>
+                    <option value="Controle Interno">Secretaria do Controle Interno</option>
+                    <option value="Fazenda">Secretaria da Fazenda</option>
+                    <option value="Contabilidade">Secretaria da Contabilidade</option>
+                    <option value="Tesouraria">Secretaria da Tesouraria</option>
+                    <option value="Convenios">Secretaria do Convenios</option>
+                    <option value="alta">Secretaria da Educação</option>
+                    <option value="Esportes">Secretaria do Esportes</option>
+                    <option value="Saude (Posto Central)">Secretaria da Saude (Posto Central)</option>
+                    <option value="Saude (Posto Raul Garcia)">Secretaria da Saude (Posto Raul Garcia)</option>
+                    <option value="Saude (Hospital)">Secretaria da Saude (Hospital)</option>
+                    <option value="Frotas">Secretaria do Frotas</option>
+                    <option value="Turismo">Secretaria do Turismo</option>
+                    <option value="Agricultura">Secretaria do Agricultura</option>
+                    <option value="Viação e Transportes">Secretaria do Viação e Transportes</option>
+
+
+                </select><br>
+
+                <label for="priority">Prioridade:</label>
+                <select id="priority" name="priority" required>
+                    <option value="baixa">Baixa</option>
+                    <option value="média">Média</option>
+                    <option value="alta">Alta</option>
+                </select><br>
+
+                <label for="task">Tarefa:</label>
+                <input type="text" id="task" name="task" maxlength="255" required></input><br>
+
+                <label for="comments">Observações:</label>
+                <textarea id="comments" name="comments" rows="10" cols="50" maxlength="255"></textarea><br>
+
+                <button type="submit">Abrir Chamado</button>
+
+
+            </form>
+        </div>
+    </div>
+
+    <div id="divfiltro">
+        <br><br><br><br><br><br><br><br>
+            <label for="filtros">Filtros:</label>
+                <select id="filtros" name="filtros" required onchange="filtroSelecionado()">
+                    <option value="1">Chamados Recentes</option>
+                    <option value="2">Chamados Antigos</option>
+                    <option value="4">Chamados Abertos</option>
+                    <option value="5">Chamados Fechados</option>
+                    <option value="3">Prioridade do Chamado</option>
+                    <option value="6">Todos os Chamados</option>
+                </select><br>
+    </div>
+    
+    <div id="contentTwo">
+
+    </div>
+
+    
+        
+
+        <div id="contentThree">
+            <form id="newEmployee" class="form-container" action="" method="POST">
+                <label for="name_employee">Nome Completo:</label>
+                <input type="text" id="name_employee" name="name_employee" required>
+
+                <label for="email_employee">Email:</label>
+                <input type="email" id="email_employee" name="email_employee" required>
+
+                <label for="password_employee">Senha:</label>
+                <input type="password" id="password_employee" name="password_employee" required>
+
+                <label for="confirm_password_employee">Confirmar Senha:</label>
+                <input type="password" id="confirm_password_employee" name="confirm_password_employee" required>
+                <div style="text-align: center;">
+                    <button type="submit">Registrar</button>
+                </div>
+            </form>
+
+        </div>
+    
+
+
+    <div id="divrelatorio">
+        <br><br><br><br>
+        <form action="" method="POST" id="formrelatorio">
+            <label for="mes">Mês:</label>
+            <input type="number" id="mes" name="mes" min="1" max="12" required>
+          
+            <label for="ano">Ano:</label>
+            <input type="number" id="ano" name="ano" min="2010" max="2090" required>
+          
+            <button id="gerarRelatorio" type="submit">Gerar Relatório</button>
+          </form>
+          <br>
+        <div id="contentFour">
+
+            
+
+        </div>
+    </div>
+    
+    <script src="../js/panel.js"></script>
+</body>
+
+</html>

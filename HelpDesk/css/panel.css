@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.navbar {
+    color: white;
+    overflow: hidden;
+    background-color: #FF7B01;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-left {
+    float: left;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-right {
+    float: right;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-right a {
+    color: white;
+    text-decoration: none;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right a:hover {
+    color: #ddd;
+}
+
+.additional-info {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.additional-info a {
+    color: #FF7B01;
+    text-decoration: none;
+}
+
+.additional-info a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    width: 160px;
+    height: 50px;
+}
+
+.unifil {
+    width: 160px;
+    height: 50px;
+}
+
+#contentOne {
+    margin-top: 60px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+    max-width: 800px;
+    width: 90%;
+
+    box-sizing: border-box;
+}
+
+#contentTwo {
+    margin-top: 60px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+
+    width: 90%;
+
+    box-sizing: border-box;
+}
+
+#contentThree {
+    margin-top: 60px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+    max-width: 800px;
+    width: 90%;
+
+    box-sizing: border-box;
+}
+
+#contentOne form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+#contentFour {
+    padding-top: 40px;
+}
+
+
+#contentOne form input[type="text"],
+#contentOne form select,
+#contentOne form textarea {
+    background-color: #ff7c0156;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 0px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+
+    box-sizing: border-box;
+}
+
+#contentOne form button[type="submit"] {
+    align-self: center;
+    width: 50%;
+    padding: 10px;
+    background-color: #FF7B01;
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+#contentTwo,
+#contentThree {
+    display: none;
+}
+
+#contentTwo {
+    text-align: -webkit-center;
+}
+
+#taskCard {
+    padding: 10px;
+    min-height: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ff7c0156;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+#infoCard-left {
+    line-break: anywhere;
+    width: 50%;
+    text-align: left;
+    flex: 1;
+}
+
+
+#infoCard-right {
+    line-break: anywhere;
+    width: 50%;
+    margin-bottom: auto;
+    text-align: left;
+    flex: 1;
+}
+
+.form-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+
+
+}
+
+
+.form-container label {
+
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+    background-color: #ff7c0156;
+    border-radius: 15px;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+
+}
+
+
+.form-container button[type="submit"] {
+    margin: 10px;
+    width: 50%;
+    padding: 10px;
+    background-color: #FF7B01;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.form-container button[type="submit"]:hover {
+    background-color: #c9a712;
+}
