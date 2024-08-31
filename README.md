@@ -1,3 +1,5 @@
+system.rar esta o codigo atualizado com a versao 2 do sistema, com algumas melhorias no front, alterando um pouco o design do aplicativo.
+
 Estágio Supervisionado
 Este repositório contém informações e recursos relacionados ao meu estágio supervisionado. Durante este período, estou trabalhando em Dk7 e Unifil sob a supervisão do Eduardo Carolensky e Ricardo Petri.
 
